@@ -37,11 +37,12 @@ If this happens, you need to know how to flash a new firmware over a wired conne
 ### Optional: Convert to Tasmota Safeboot 
 
 1. ***MANDATORY*** Download **ALL** files in the file system to your PC.
-2. Open the Partition Wizard -> Menu Entry. Choose **Increase FS to max** and click the corresponding button. This will increase the FS and erase anything that is currently present in it.
-3. Upload the in Step 1. downloaded `Partiton_wizard.tapp` and `Partitions_update.be` to the Tasmota FS. Inside the Berry Console, type `import Partitions_update.be` and hit Return twice. Afterwards, restart the device.
-4. Open the Partition Wizard and start the Safeboot Conversion process. If it is not possible to start due to something is marked in red, then an OTA Tasmota upgrade is needed. Perform the upgrade, and the Safeboot Conversion process can then be started.
-5. The size of the Partition FS is now larger than the default size. If desired, the default 320kB size can be restored using the Partition Wizard.
-6. Finally, configure device using [templates here](https://templates.blakadder.com/search.html).
+2. Open the Partition Wizard -> Menu Entry. Choose **Increase FS to max** and click the corresponding button. This will increase the FS and erase anything that is currently present in it. If option is not available, continue
+3. Upload the in Step 1. downloaded `Partiton_wizard.tapp` and `Partitions_update.be` to the Tasmota FS if not already there. Inside the Berry Console, type `import Partitions_update` and hit Return twice. Afterwards, restart the device.
+4. Upload the in Step 1. downloaded `Partiton_wizard.tapp` to the Tasmota FS. Restart.
+5. Open the Partition Wizard and start the Safeboot Conversion process. If it is not possible to start due to something is marked in red, then an OTA Tasmota upgrade is needed. Perform the upgrade, and the Safeboot Conversion process can then be started.
+6. The size of the Partition FS is now larger than the default size. If desired, the default 320kB size can be restored using the Partition Wizard.
+7. Finally, configure device using [templates here](https://templates.blakadder.com/search.html).
 
 ## Supported Devices and OTA Links
 
