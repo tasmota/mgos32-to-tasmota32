@@ -38,6 +38,7 @@ If this happens, you need to know how to flash a new firmware over a wired conne
 | **Device** | **Link** | **State** |
 |------|------|------|
 | **PlusHT** |   `http://ota.tasmota.com/tasmota32/shelly/mgos32-to-tasmota32-PlusHT.zip`   |   :warning:**untested**   |
+| **PlusPlugUK** |   `http://ota.tasmota.com/tasmota32/shelly/mgos32-to-tasmota32-PlusPlugUK.zip`   |   :warning:**untested**   |
 | **PlusPlugS** |   `http://ota.tasmota.com/tasmota32/shelly/mgos32-to-tasmota32-PlusPlugS.zip`   |   :white_check_mark:**tested**   |
 | **PlugIT** |   `http://ota.tasmota.com/tasmota32/shelly/mgos32-to-tasmota32-PlugIT.zip`   |   :warning:**untested**   |
 | **PlugUS** |   `http://ota.tasmota.com/tasmota32/shelly/mgos32-to-tasmota32-PlugUS.zip`   |   :warning:**untested**   |
