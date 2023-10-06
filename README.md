@@ -13,7 +13,7 @@ To recover a failed convert, flashing Tasmota over a wired serial connection is 
 ## Prerequisites
 
 1. ⚠️ Needed ⚠️ Update the device to the latest **stable** firmware (Internet access!!)
-2. Download the name corresponding zip package for your device (See [release section](https://github.com/tasmota/mgos32-to-tasmota32/releases)
+2. Download the name corresponding zip package for your device (See [release section](https://github.com/tasmota/mgos32-to-tasmota32/releases))
 
 ## Let’s start
 
