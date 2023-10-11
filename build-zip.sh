@@ -102,7 +102,7 @@ do
     generatezip $i "tasmota32c3.bin" "fs-4MB-tasmota-C3.img" 2
 done
 
-ShellyPlus=( PlusHT PlusPlugS PlugIT PlugUS PlugUK PlusI4 PlusWallDimmer Plus1PM Plus1 Plus2PM )
+ShellyPlus=( PlusHT PlusPlugS PlusPlugUK PlugIT PlugUS PlugUK PlusI4 PlusWallDimmer Plus1PM Plus1 Plus2PM )
 for i in "${ShellyPlus[@]}"
 do
     generatezip $i "tasmota32solo1.bin" "fs-4MB-tasmota.img" 1
