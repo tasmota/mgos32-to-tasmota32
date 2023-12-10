@@ -23,12 +23,12 @@ To recover a failed convert, flashing Tasmota over a wired serial connection is 
 4. Device is updating, finished in 1-2 minutes
 5. If Shelly Web frontend is back after the update, repeat the steps above.
 6. The Web frontend does not react anymore now.
-7. Connect to the new opened Tasmota Wi-Fi access point and add the device to your Wi-Fi (**full Internet access needed**). 
+7. Connect to the newly opened Tasmota Wi-Fi access point and add the device to your Wi-Fi (**full Internet access needed**). 
 ### ⚠️ NEEDED ⚠️ Convert to Tasmota Safeboot and update to latest Tasmota release
-8. Configure device using Tasmota Auto configuration. Select your device and hit enter. **This replaces the locked bootloader** (without this step device gets bricked with next firmware update).
-9. Wait until device is online again. Takes a few seconds
-10. Open the Partition Wizard and start the Safeboot Conversion with hitting the button "Start Migration". The conversion will update to latest Tasmota version too.
-11. Wait until device is online again. Takes 3 - 5 minutes
+8. Configure the device using Tasmota Auto configuration. (Configuration > Auto-configuration > Select new auto-configuration) Select your device and hit enter. **This replaces the locked bootloader** (without this step device gets bricked with the next firmware update).
+9. Wait until the device is online again. Takes a few seconds
+10. Under consoles, open the Partition Wizard and start the Safeboot Conversion by hitting the button "Start Migration". The conversion will update to the latest Tasmota version too.
+11. Wait until the device is online again. Takes 3 - 5 minutes
 12. Optional: Use Partition Wizard to increase the Filesystem size to its maximum. This removes all obsolete files too.
 
 ## Supported Devices
