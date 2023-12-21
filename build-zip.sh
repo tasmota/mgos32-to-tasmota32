@@ -110,7 +110,7 @@ done
 ShellyPlus=( PlusHT PlusPlugS PlusPlugUK PlusPlugIT PlusPlugUS PlugUS PlusI4 PlusWallDimmer Plus1PM Plus1 Plus2PM Plus10V )
 for i in "${ShellyPlus[@]}"
 do
-    generatezip $i "tasmota32solo1.bin" "fs.img" 1
+    generatezip $i "tasmota32solo1.bin" "fs-4MB-tasmota.img" 1
 done
 
 ShellyPro8MB=( Pro1 Pro1PM Pro2 Pro2PM Pro3 )
