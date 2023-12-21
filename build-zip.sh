@@ -28,13 +28,13 @@ then
   partition_file="C3_4MB_partition-table.bin"
 else
   platform="esp32"
-  boot_file="bootloader-tasmota.bin"
+  boot_file="bootloader.bin"
   boot_file_addr=4096
   partition_file="partition-table-tasmota.bin"
 fi
 
 #General:
-otadata_file="otadata-tasmota.bin"
+otadata_file="otadata.bin"
 
 #Generated:
 
@@ -110,7 +110,7 @@ done
 ShellyPlus=( PlusHT PlusPlugS PlusPlugUK PlusPlugIT PlusPlugUS PlugUS PlusI4 PlusWallDimmer Plus1PM Plus1 Plus2PM Plus10V )
 for i in "${ShellyPlus[@]}"
 do
-    generatezip $i "tasmota32solo1.bin" "fs-4MB-tasmota.img" 1
+    generatezip $i "tasmota32solo1.bin" "fs.img" 1
 done
 
 ShellyPro8MB=( Pro1 Pro1PM Pro2 Pro2PM Pro3 )
