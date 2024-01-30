@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Build firmware
       run: bash ./build-zip.sh
     - name: Display files
@@ -17,7 +17,7 @@ jobs:
     - name: setenv release tag
       run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
     - name: Release
-      uses: jason2866/action-gh-release@v1.2
+      uses: jason2866/action-gh-release@v1.3
       with:
         tag_name: ${{ env.RELEASE_VERSION }}
         files: ./output/*
