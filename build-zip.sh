@@ -96,12 +96,7 @@ JSON_STRING=$( jq -n \
 printf "$JSON_STRING" > build-files/manifest.json
 
 cd build-files
-zip -0 mgos32-to-tasmota32-$shelly_device.zip manifest.json
-zip -0 mgos32-to-tasmota32-$shelly_device.zip $boot_file
-zip -0 mgos32-to-tasmota32-$shelly_device.zip $partition_file
-zip -0 mgos32-to-tasmota32-$shelly_device.zip $otadata_file
-zip -0 mgos32-to-tasmota32-$shelly_device.zip $app_file
-zip -0 mgos32-to-tasmota32-$shelly_device.zip $fs_file
+zip -0 mgos32-to-tasmota32-$shelly_device.zip manifest.json $boot_file $partition_file $otadata_file $app_file $fs_file
 mv mgos32-to-tasmota32-$shelly_device.zip ../output/
 cd ..
 
