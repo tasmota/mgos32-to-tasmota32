@@ -7,7 +7,6 @@
 
 mkdir output
 
-#tasmota_version=$(curl --silent "https://api.github.com/repos/arendst/Tasmota/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
 tasmota_version="12.5.0"
 
 curl -o build-files/tasmota32.bin http://ota.tasmota.com/tasmota32/release-12.5.0/tasmota32.bin
@@ -121,7 +120,7 @@ do
     generatezip $i "tasmota32c3.bin" "fs-4MB-tasmota-C3.img" 2
 done
 
-ShellyPlus=( PlusHT PlusPlugS PlusPlugUK PlusPlugIT PlusPlugUS PlugUS PlusI4 PlusWallDimmer Plus1PM Plus1 Plus2PM Plus10V )
+ShellyPlus=( PlusHT PlusPlugS PlusPlugUK PlusPlugIT PlusPlugUS PlugUS PlusI4 PlusWallDimmer Plus1PM Plus1 Plus2PM Plus10V PlusUni )
 for i in "${ShellyPlus[@]}"
 do
     generatezip $i "tasmota32solo1.bin" "fs-4MB-tasmota.img" 1
