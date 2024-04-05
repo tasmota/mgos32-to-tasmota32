@@ -25,10 +25,10 @@ To recover a failed convert, flashing Tasmota over a wired serial connection is 
 7. Connect to the newly opened Tasmota Wi-Fi access point and add the device to your Wi-Fi (**full Internet access needed**). 
 ### ⚠️ NEEDED ⚠️ Convert to Tasmota Safeboot and update to latest Tasmota release
 8. Configure the device using Tasmota Auto configuration. (Configuration > Auto-configuration > Select new auto-configuration) Select your device and hit enter. **This replaces the locked bootloader** (without this step device gets bricked with the next firmware update).
-9. Wait until the device is online again. Takes a few seconds
-10. Under consoles, open the Partition Wizard and start the Safeboot Conversion by hitting the button "Start Migration". The conversion will update to the latest Tasmota version too.
-11. Wait until the device is online again. Takes 3 - 5 minutes
-12. Optional: Use Partition Wizard to increase the Filesystem size to its maximum. This removes all obsolete files too.
+9. Wait until the device is online again. Takes 1-2 minutes
+11. Under consoles, open the Partition Wizard and start the Safeboot Conversion by hitting the button "Start Migration". The conversion will update to the latest Tasmota version too.
+12. Wait until the device is online again. Takes 1-2 minutes
+13. Optional: Use Partition Wizard to increase the Filesystem size to its maximum. This removes all obsolete files too.
 
 ## Supported Devices
 
