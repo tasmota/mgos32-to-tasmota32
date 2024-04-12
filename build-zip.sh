@@ -36,18 +36,18 @@ else
   platform="esp32"
   boot_file="bootloader.bin"
   boot_file_addr=4096
-if [[ $4 -eq 2 ]]
-then
-  partition_file="4MB_partition-table.bin"
-fi
-if [[ $4 -eq 3 ]]
-then
-  partition_file="8MB_partition-table.bin"
-fi
-if [[ $4 -eq 4 ]]
-then
-  partition_file="16MB_partition-table.bin"
-fi
+  if [[ $3 == "fs-4MB-tasmota.img" ]]
+  then
+    partition_file="4MB_partition-table.bin"
+  fi
+  if [[ $3 == "fs-8MB-tasmota.img" ]]
+  then
+    partition_file="8MB_partition-table.bin"
+  fi
+  if [[ $3 == "fs-16MB-tasmota.img" ]]
+  then
+    partition_file="16MB_partition-table.bin"
+  fi
 fi
 fi
 
@@ -140,17 +140,17 @@ done
 ShellyPro8MB=( Pro1 Pro1PM Pro2 Pro2PM Pro3 )
 for i in "${ShellyPro8MB[@]}"
 do
-    generatezip $i "tasmota32.bin" "fs-8MB-tasmota.img" 3
+    generatezip $i "tasmota32.bin" "fs-8MB-tasmota.img" 1
 done
 
 ShellyPro8MBlvgl=( Pro4PM )
 for i in "${ShellyPro8MBlvgl[@]}"
 do
-    generatezip $i "tasmota32-lvgl.bin" "fs-8MB-tasmota.img" 3
+    generatezip $i "tasmota32-lvgl.bin" "fs-8MB-tasmota.img" 1
 done
 
 ShellyPro16MB=( Pro3EM )
 for i in "${ShellyPro16MB[@]}"
 do
-    generatezip $i "tasmota32.bin" "fs-16MB-tasmota.img" 4
+    generatezip $i "tasmota32.bin" "fs-16MB-tasmota.img" 1
 done
