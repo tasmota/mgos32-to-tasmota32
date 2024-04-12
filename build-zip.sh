@@ -36,7 +36,7 @@ else
   platform="esp32"
   boot_file="bootloader.bin"
   boot_file_addr=4096
-  partition_file="partition-table.bin"
+  partition_file="4MB_partition-table.bin"
 fi
 fi
 
