@@ -66,7 +66,7 @@ To recover a failed convert, flashing Tasmota over a wired serial connection is 
 
 ## What if my device is not listed?
 
-If your Shelly device is not listed, please open an issue with a link to the Shelly Knowledge Base.
+If your Shelly device is not listed, please open an issue with a link to the Shelly Knowledge Base and post a screenshot of the main Web Shelly firmware page.
 
 ## Credits
 
