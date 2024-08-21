@@ -36,9 +36,9 @@ else
   platform="esp32"
   boot_file="bootloader.bin"
   boot_file_addr=4096
-  if [[ $3 == "fs-4MB-tasmota.img" ]]
+  if [[ $3 == "fw14-fs-384.img" ]]
   then
-    partition_file="4MB_partition-table.bin"
+    partition_file="fw14-4MB-partition-table.bin"
   fi
   if [[ $3 == "fs-8MB-tasmota.img" ]]
   then
@@ -131,10 +131,10 @@ do
     generatezip $i "tasmota32c3.bin" "fs-4MB-tasmota-C3.img" 2
 done
 
-ShellyPlus=( PlusHT PlusPlugS PlusPlugUK PlusPlugIT PlusPlugUS PlugUS PlusI4 PlusWallDimmer Plus1PM Plus1 Plus2PM Plus10V PlusUni )
+ShellyPlus=( PlusHT PlusPlugS PlusPlugUK PlusPlugIT PlusPlugUS PlugUS PlusI4 PlusWallDimmer Plus1PM Plus1 Plus2PM Plus10V PlusUni PlusRGBWPM PlusRGBW)
 for i in "${ShellyPlus[@]}"
 do
-    generatezip $i "tasmota32solo1.bin" "fs-4MB-tasmota.img" 1
+    generatezip $i "tasmota32solo1.bin" "fw14-fs-384.img" 1
 done
 
 ShellyPro8MB=( Pro1 Pro1PM Pro2 Pro2PM Pro3 )
