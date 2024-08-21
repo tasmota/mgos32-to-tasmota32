@@ -1,5 +1,5 @@
 # ⚠️ New Shelly fw 1.4.x seems to break device using OTA convert ⚠️
-
+The reason is found. Working on update...
 
 # Shelly convert to Tasmota
 This guide explains how to convert Shelly ESP32 and ESP32-C3 driven devices to Tasmota (no other firmware!)
