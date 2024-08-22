@@ -152,5 +152,5 @@ done
 ShellyPro16MB=( Pro3EM )
 for i in "${ShellyPro16MB[@]}"
 do
-    generatezip $i "tasmota32.bin" "fs-512-16MB" 1
+    generatezip $i "tasmota32.bin" "fs-512-16MB.img" 1
 done
