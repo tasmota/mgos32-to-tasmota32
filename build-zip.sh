@@ -22,31 +22,31 @@ fs_file=$3
 if [[ $4 -eq 3 ]]
 then
   platform="esp32c3"
-  boot_file="bootloader-tasmota-c3.bin"
+  boot_file="bootloader-c3.bin"
   boot_file_addr=0
-  partition_file="C3_8MB_partition-table.bin"
+  partition_file="C3-8MB-partition-table.bin"
 else
 if [[ $4 -eq 2 ]]
 then
   platform="esp32c3"
-  boot_file="bootloader-tasmota-c3.bin"
+  boot_file="bootloader-c3.bin"
   boot_file_addr=0
-  partition_file="C3_4MB_partition-table.bin"
+  partition_file="4MB-partition-table.bin"
 else
   platform="esp32"
   boot_file="bootloader.bin"
   boot_file_addr=4096
-  if [[ $3 == "fw14-fs-384.img" ]]
+  if [[ $3 == "fs-384.img" ]]
   then
-    partition_file="fw14-4MB-partition-table.bin"
+    partition_file="4MB-partition-table.bin"
   fi
-  if [[ $3 == "fs-8MB-tasmota.img" ]]
+  if [[ $3 == "fs-512.img" ]]
   then
-    partition_file="8MB_partition-table.bin"
+    partition_file="8MB-partition-table.bin"
   fi
-  if [[ $3 == "fs-16MB-tasmota.img" ]]
+  if [[ $3 == "fs-512-16MB.img" ]]
   then
-    partition_file="16MB_partition-table.bin"
+    partition_file="16MB-partition-table.bin"
   fi
 fi
 fi
@@ -122,35 +122,35 @@ printf "\nDone mgos32-to-tasmota32-$shelly_device.zip\n\n"
 ShellyMiniG3=( Mini1PMG3 Mini1G3 MiniPMG3 )
 for i in "${ShellyMiniG3[@]}"
 do
-    generatezip $i "tasmota32c3.bin" "fs-8MB-tasmota-C3.img" 3
+    generatezip $i "tasmota32c3.bin" "fs-1024.img" 3
 done
 
 ShellyPlusMini=( Plus1PMMini Plus1Mini PlusPMMini )
 for i in "${ShellyPlusMini[@]}"
 do
-    generatezip $i "tasmota32c3.bin" "fs-4MB-tasmota-C3.img" 2
+    generatezip $i "tasmota32c3.bin" "fs-384.img" 2
 done
 
 ShellyPlus=( PlusHT PlusPlugS PlusPlugUK PlusPlugIT PlusPlugUS PlugUS PlusI4 PlusWallDimmer Plus1PM Plus1 Plus2PM Plus10V PlusUni PlusRGBWPM PlusRGBW)
 for i in "${ShellyPlus[@]}"
 do
-    generatezip $i "tasmota32solo1.bin" "fw14-fs-384.img" 1
+    generatezip $i "tasmota32solo1.bin" "fs-384.img" 1
 done
 
 ShellyPro8MB=( Pro1 Pro1PM Pro2 Pro2PM Pro3 )
 for i in "${ShellyPro8MB[@]}"
 do
-    generatezip $i "tasmota32.bin" "fs-8MB-tasmota.img" 1
+    generatezip $i "tasmota32.bin" "fs-512.img" 1
 done
 
 ShellyPro8MBlvgl=( Pro4PM )
 for i in "${ShellyPro8MBlvgl[@]}"
 do
-    generatezip $i "tasmota32-lvgl.bin" "fs-8MB-tasmota.img" 1
+    generatezip $i "tasmota32-lvgl.bin" "fs-512.img" 1
 done
 
 ShellyPro16MB=( Pro3EM )
 for i in "${ShellyPro16MB[@]}"
 do
-    generatezip $i "tasmota32.bin" "fs-16MB-tasmota.img" 1
+    generatezip $i "tasmota32.bin" "fs-512-16MB" 1
 done
