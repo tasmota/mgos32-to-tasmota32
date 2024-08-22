@@ -1,6 +1,3 @@
-# ⚠️ New Shelly fw 1.4.x seems to break device using OTA convert ⚠️
-The reason is found. Working on update...
-
 # Shelly convert to Tasmota
 This guide explains how to convert Shelly ESP32 and ESP32-C3 driven devices to Tasmota (no other firmware!)
 
@@ -11,7 +8,7 @@ To recover a failed convert, flashing Tasmota over a wired serial connection is 
 
 ## Prerequisites
 
-1. ⚠️ Needed ⚠️ Update the device to the latest **stable** firmware (Internet access!!)
+1. ⚠️ Needed ⚠️ Update the device to Shelly firmware >= 1.4.x (Internet access!!)
 2. Download the name corresponding zip package for your device (See [release section](https://github.com/tasmota/mgos32-to-tasmota32/releases))
 
 ## Let’s start
@@ -46,6 +43,7 @@ To recover a failed convert, flashing Tasmota over a wired serial connection is 
 | **Plus1PM** |   :white_check_mark:**tested**   |
 | **Plus1**   |   :white_check_mark:**tested**   |
 | **Plus2PM** |   :white_check_mark:**tested**   |
+| **PlusRGBWPM** |   :white_check_mark:**tested**   |
 | **Pro1**   |   :white_check_mark:**tested**   |
 | **Pro1PM** |   :white_check_mark:**tested**   |
 | **Pro2**   |   :white_check_mark:**tested**   |
