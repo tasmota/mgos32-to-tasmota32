@@ -1,3 +1,6 @@
+# ⚠️ Maybe convert is not working for Shelly Mini devices 3rd generation ⚠️
+Dont try to convert when you are not able to flash via serial in worst case
+
 # Shelly convert to Tasmota
 This guide explains how to convert Shelly ESP32 and ESP32-C3 driven devices to Tasmota (no other firmware!)
 
