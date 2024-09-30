@@ -89,7 +89,7 @@ JSON_STRING=$( jq -n \
                     --arg boot_cs_sha1 "$boot_file_cs1" \
                     --arg boot_cs_sha256 "$boot_file_cs256" \
                     --arg partition_file "$partition_file" \
-                    --arg partition_file_addr "$partition_file_addr" \
+                    --argjson partition_file_addr $partition_file_addr \
                     --argjson partition_file_size $partition_file_size \
                     --arg partition_cs_sha1 "$partition_file_cs1" \
                     --arg partition_cs_sha256 "$partition_file_cs256" \
