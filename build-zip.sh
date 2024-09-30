@@ -26,6 +26,7 @@ then
   boot_file_addr=0
   partition_file_addr=61440
   partition_file="C3-8MB-partition-table.bin"
+  nvs_size=49152
 else
 if [[ $4 -eq 2 ]]
 then
@@ -34,11 +35,13 @@ then
   boot_file_addr=0
   partition_file_addr=32768
   partition_file="4MB-partition-table.bin"
+  nvs_size=16384
 else
   platform="esp32"
   boot_file="bootloader.bin"
   boot_file_addr=4096
   partition_file_addr=32768
+  nvs_size=16384
   if [[ $3 == "fs-384.img" ]]
   then
     partition_file="4MB-partition-table.bin"
@@ -97,6 +100,7 @@ JSON_STRING=$( jq -n \
                     --argjson otadata_file_size $otadata_file_size \
                     --arg otadata_cs_sha1 "$otadata_file_cs1" \
                     --arg otadata_cs_sha256 "$otadata_file_cs256" \
+                    --argjson nvs_size $nvs_size \
                     --arg app_file "$app_file" \
                     --argjson app_file_size $app_file_size \
                     --arg app_cs_sha1 "$app_file_cs1" \
@@ -105,7 +109,7 @@ JSON_STRING=$( jq -n \
                     --argjson fs_file_size $fs_file_size \
                     --arg fs_cs_sha1 "$fs_file_cs1" \
                     --arg fs_cs_sha256 "$fs_file_cs256" \
-'{ "name" : $name, "platform" : $platform, "version" : $version, "build_id" : $build_id, "build_timestamp" : $build_timestamp, "parts": { "boot": { "type": "boot", "src": $boot_file, "addr": $boot_file_addr, "size": $boot_file_size, "cs_sha1" : $boot_cs_sha1, "cs_sha256": $boot_cs_sha256, "encrypt": true, "min_version": "0.0.0" }, "pt": { "type": "pt", "src": $partition_file, "addr": $partition_file_addr, "size": $partition_file_size, "cs_sha1": $partition_cs_sha1, "cs_sha256": $partition_cs_sha256, "encrypt": true }, "otadata": { "type": "otadata", "src": $otadata_file, "size": $otadata_file_size, "cs_sha1": $otadata_cs_sha1, "cs_sha256": $otadata_cs_sha256, "encrypt": true, "ptn": "otadata"}, "nvs": { "type": "nvs", "size": 16384, "fill": 255, "ptn": "nvs" }, "app": { "type": "app", "src": $app_file, "size": $app_file_size, "cs_sha1" : $app_cs_sha1, "cs_sha256" : $app_cs_sha256, "encrypt": true, "ptn": "app_0"}, "fs": { "type": "fs", "src": $fs_file, "size": $fs_file_size, "cs_sha1": $fs_cs_sha1, "cs_sha256": $fs_cs_sha256, "size": $fs_file_size, "encrypt": true, "ptn": "fs_0", "fs_size": $fs_file_size }}}')
+'{ "name" : $name, "platform" : $platform, "version" : $version, "build_id" : $build_id, "build_timestamp" : $build_timestamp, "parts": { "boot": { "type": "boot", "src": $boot_file, "addr": $boot_file_addr, "size": $boot_file_size, "cs_sha1" : $boot_cs_sha1, "cs_sha256": $boot_cs_sha256, "encrypt": true, "min_version": "0.0.0" }, "pt": { "type": "pt", "src": $partition_file, "addr": $partition_file_addr, "size": $partition_file_size, "cs_sha1": $partition_cs_sha1, "cs_sha256": $partition_cs_sha256, "encrypt": true }, "otadata": { "type": "otadata", "src": $otadata_file, "size": $otadata_file_size, "cs_sha1": $otadata_cs_sha1, "cs_sha256": $otadata_cs_sha256, "encrypt": true, "ptn": "otadata"}, "nvs": { "type": "nvs", "size": $nvs_size, "fill": 255, "ptn": "nvs" }, "app": { "type": "app", "src": $app_file, "size": $app_file_size, "cs_sha1" : $app_cs_sha1, "cs_sha256" : $app_cs_sha256, "encrypt": true, "ptn": "app_0"}, "fs": { "type": "fs", "src": $fs_file, "size": $fs_file_size, "cs_sha1": $fs_cs_sha1, "cs_sha256": $fs_cs_sha256, "size": $fs_file_size, "encrypt": true, "ptn": "fs_0", "fs_size": $fs_file_size }}}')
 
 printf "$JSON_STRING" > build-files/manifest.json
 
