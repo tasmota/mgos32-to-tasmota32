@@ -1,5 +1,5 @@
 # ⚠️ Mini Gen 3 OTA convert is not reliable ⚠️
-Currently no idea why :-(
+Please use v14.1.0 for Mini Gen3 devices. The issue is most probably fixed!
 
 # Shelly convert to Tasmota
 This guide explains how to convert Shelly ESP32 and ESP32-C3 driven devices to Tasmota (no other firmware!)
