@@ -63,6 +63,7 @@ To recover a failed convert, flashing Tasmota over a wired serial connection is 
 | **Mini1PMG3**  |   :white_check_mark:**tested** |
 | **Mini1G3**    |   :white_check_mark:**tested** |
 | **MiniPMG3**   |   :white_check_mark:**tested** |
+| **PlugSG3** |   :warning: **no Tasmota support**   |
 
 ##### Pro4PM is build with LVGL support
 
