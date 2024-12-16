@@ -1,4 +1,5 @@
-# ⚠️ Currently some devices do fail to convert. Do not use ⚠️
+# ⚠️ Currently some devices fail sometimes to convert. Reason unknown. ⚠️
+# All Matter devices are impossible to convert !
 
 
 # Shelly convert to Tasmota
