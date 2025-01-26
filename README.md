@@ -82,4 +82,4 @@ I would like to thank [Jason2866](https://github.com/Jason2866) for providing he
 
 This repository is released under the GNU General Public License v3.0. Refer to the [LICENSE](LICENSE) file for more information. 
 
-Copyright (C) 2023 Philipp '3D' ten Brink 
+Copyright (C) 2023 Philipp '3D' ten Brink and 2024/25 Jason2866
