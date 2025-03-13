@@ -1,6 +1,6 @@
 # ⚠️ Currently some devices fail sometimes to convert. Reason unknown. ⚠️
-# All Matter devices are impossible to convert !
-# No update to firmware v1.5.x 
+## All Matter devices are impossible to convert !
+## No update to firmware v1.5.x 
 
 
 # Shelly convert to Tasmota
