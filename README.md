@@ -1,8 +1,8 @@
 # ⚠️ Known issues and limitations ⚠️
-- devices fail sometimes to convert, reason unknown -> serial flash needed!
+- devices fail sometimes to convert, reason unknown -> serial flash needed !
 - all Matter devices are impossible to convert !
 - Shelly firmware >= v1.5.x not supported !
-- development stopped until known if new flashable devices will be available in future
+- development stopped until known, if new available devices will be flashable (OTA, serial)
 
 # Shelly convert to Tasmota
 This guide explains how to convert Shelly ESP32 and ESP32-C3 driven devices to Tasmota (no other firmware!)
