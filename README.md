@@ -1,8 +1,8 @@
-# ⚠️ Currently some devices fail sometimes to convert. Reason unknown. ⚠️
-## All Matter devices are impossible to convert !
-## No update to firmware v1.5.x (not supported)
-## development stopped until it is clear if any new flashable will be available in future
-
+# ⚠️ Known issues and limitations ⚠️
+- devices fail sometimes to convert
+- all Matter devices are impossible to convert !
+- Shelly firmware >= v1.5.x not supported !
+- development stopped until known if new flashable devices will be available in future
 
 # Shelly convert to Tasmota
 This guide explains how to convert Shelly ESP32 and ESP32-C3 driven devices to Tasmota (no other firmware!)
