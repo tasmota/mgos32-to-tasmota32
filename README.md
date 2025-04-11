@@ -1,6 +1,7 @@
 # ⚠️ Currently some devices fail sometimes to convert. Reason unknown. ⚠️
 ## All Matter devices are impossible to convert !
-## No update to firmware v1.5.x 
+## No update to firmware v1.5.x (not supported)
+## development stopped until it is clear if any new flashable will be available in future
 
 
 # Shelly convert to Tasmota
