@@ -1,5 +1,5 @@
 # ⚠️ Known issues and limitations ⚠️
-- devices fail sometimes to convert
+- devices fail sometimes to convert, reason unknown -> serial flash needed!
 - all Matter devices are impossible to convert !
 - Shelly firmware >= v1.5.x not supported !
 - development stopped until known if new flashable devices will be available in future
