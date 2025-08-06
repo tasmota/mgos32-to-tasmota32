@@ -4,7 +4,7 @@ This guide explains how to convert Shelly ESP32 and ESP32-C3 driven devices to T
 # ⚠️ Known issues and limitations ⚠️
 - devices fail sometimes to convert -> Tasmota serial flash needed !
 - all Matter devices are impossible to convert !
-- Shelly firmware >= v1.5.x not supported !
+- Shelly devices with firmware >= v1.5.x are not supported !
 - **development stopped** until known, if new available devices will be flashable (OTA, serial)
 
 ## :warning: **There is no way back to Shelly firmware if you have initiated the convert process!**
