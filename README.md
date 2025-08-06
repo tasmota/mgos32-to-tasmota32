@@ -14,7 +14,7 @@ To recover a failed convert, flashing Tasmota over a wired serial connection is 
 
 ## Prerequisites
 
-1. ⚠️ Needed ⚠️ Update the device to Shelly firmware >= 1.4.x (Internet access!!)
+1. ⚠️ Needed ⚠️ Update the device to Shelly firmware >= 1.4.x < 1.5.x (Internet access!!)
 2. For devices where is still no firmware 1.4.x available (-> Mini1G3) use packages from release [v13.4.1](https://github.com/tasmota/mgos32-to-tasmota32/releases/tag/v13.4.1) to convert!
 3. Download the name corresponding zip package for your device (See [release section](https://github.com/tasmota/mgos32-to-tasmota32/releases))
 
